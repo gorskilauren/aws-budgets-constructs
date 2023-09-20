@@ -1,0 +1,29 @@
+{
+  "name": "aws-budgets-constructs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf yarn.lock node_modules/ cdktf-module/node_modules/ aws-cdk-construct/node_modules/",
+    "test": "yarn workspaces run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorskilauren/aws-budgets-constructs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorskilauren/aws-budgets-constructs/issues"
+  },
+  "workspaces": [
+    "@lgorski/cdktf-budgets-module",
+    "@lgorski/aws-cdk-budgets-construct"
+  ],
+  "homepage": "https://github.com/gorskilauren/aws-budgets-constructs#readme",
+  "dependencies": {
+    "@lgorski/cdktf-budgets-module": "^1.0.0",
+    "rimraf": "^5.0.1"
+  }
+}
